@@ -35,152 +35,172 @@
         <nav class="flex justify-between items-center">
           <img src="./assets/images/logo.svg" alt="logo" />
 
-
-
-          
-
-          <img class="md:hidden" src="./assets/images/icon-menu.svg" alt="logo" />
+          <img
+            class="md:hidden"
+            src="./assets/images/icon-menu.svg"
+            alt="logo"
+          />
           <div class="hidden md:block">
             <ul class="flex gap-3 text-neutral-grayish-blue">
-              <li class=" hover:text-primary-orange"><a href="#">Home</a></li>
-              <li class=" hover:text-primary-orange"><a href="#">New</a></li>
-              <li class=" hover:text-primary-orange"><a href="#">Popular</a></li>
-              <li class=" hover:text-primary-orange"><a href="#">Trending</a></li>
-              <li class=" hover:text-primary-orange"><a href="#">Catégories</a></li>
+              <li class="hover:text-primary-orange"><a href="#">Home</a></li>
+              <li class="hover:text-primary-orange"><a href="#">New</a></li>
+              <li class="hover:text-primary-orange"><a href="#">Popular</a></li>
+              <li class="hover:text-primary-orange">
+                <a href="#">Trending</a>
+              </li>
+              <li class="hover:text-primary-orange">
+                <a href="#">Catégories</a>
+              </li>
             </ul>
           </div>
-          
-
         </nav>
       </header>
 
       <main>
-        <article class="flex flex-col gap-6 mb-8">
-          <img src="./assets/images/image-web-3-mobile.jpg" alt="Web 3.0" />
+        <section class="xl:flex gap-6">
+          <article class="flex flex-col gap-6 mb-8 xl:">
+            <img
+              class="xl:hidden"
+              src="./assets/images/image-web-3-mobile.jpg"
+              alt="Web 3.0"
+            />
 
-          <div class="flex flex-col gap-5 md:flex-row">
-            <h1 class="text-5xl text-neutral-very-dark-blue font-extrabold">
-              The Bright Future of Web 3.0?
-            </h1>
+            <img
+              class="hidden xl:flex"
+              src="./assets/images/image-web-3-desktop.jpg"
+              alt=""
+            />
 
-            <div>
-              <p class="mb-6">
-                We dive into the next evolution of the web that claims to put
-                the power of the platforms back into the hands of the people.
-                But is it really fulfilling its promise?
-              </p>
-              <a
-                href="#"
-                class="bg-primary-red p-5 flex justify-center items-center uppercase tracking-[0.2em] text-neutral-off-white font-bold w-[55%]"
-                >Read more</a
-              >
+            <div class="flex flex-col gap-5 md:flex-row">
+              <h1 class="text-5xl text-neutral-very-dark-blue font-extrabold">
+                The Bright Future of Web 3.0?
+              </h1>
+
+              <div>
+                <p class="mb-6 md:text-lg">
+                  We dive into the next evolution of the web that claims to put
+                  the power of the platforms back into the hands of the people.
+                  But is it really fulfilling its promise?
+                </p>
+                <a
+                  href="#"
+                  class="bg-primary-red p-5 flex justify-center items-center uppercase tracking-[0.2em] text-neutral-off-white font-bold w-[55%] xl: hover:bg-neutral-very-dark-blue"
+                  >Read more</a
+                >
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <section class="flex flex-col gap-5 p-5 bg-neutral-very-dark-blue">
-          <h2 class="text-primary-orange text-3xl font-bold">New</h2>
+          <div class="flex flex-col gap-5 p-5 bg-neutral-very-dark-blue xl:">
+            <h2 class="text-primary-orange text-3xl font-bold">New</h2>
 
-          <a href="#" class="group">
+            <a href="#" class="group">
+              <article>
+                <h3
+                  class="text-neutral-off-white text-xl font-bold group-hover:text-primary-orange"
+                >
+                  Hydrogen VS Electric Cars
+                </h3>
+
+                <p class="md:text-lg">
+                  Will hydrogen-fueled cars ever catch up to EVs?
+                </p>
+              </article>
+            </a>
+            <hr />
             <article>
-              <h3
-                class="text-neutral-off-white text-xl font-bold group-hover:text-primary-orange"
-              >
-                Hydrogen VS Electric Cars
+              <h3 class="text-neutral-off-white text-xl font-bold">
+                The Downsides of AI Artistry
               </h3>
-
-              <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+              <p class="md:text-lg">
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
             </article>
-          </a>
-          <hr />
-          <article>
-            <h3 class="text-neutral-off-white text-xl font-bold">
-              The Downsides of AI Artistry
-            </h3>
-            <p>
-              What are the possible adverse effects of on-demand AI image
-              generation?
-            </p>
-          </article>
-          <hr />
-          <article>
-            <h3 class="text-neutral-off-white text-xl font-bold">
-              Is VC Funding Drying Up?
-            </h3>
-            <p>
-              Private funding by VC firms is down 50% YOY. We take a look at
-              what that means.
-            </p>
-          </article>
+            <hr />
+            <article>
+              <h3 class="text-neutral-off-white text-xl font-bold">
+                Is VC Funding Drying Up?
+              </h3>
+              <p class="md:text-lg">
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+            </article>
+          </div>
         </section>
 
-        <section class="my-8">
-          <div class="md:flex flex-row gap-5">
-            <article class="flex mb-8 gap-x-5">
-              <img
-                class="w-24 md:w-40"
-                src="./assets/images/image-retro-pcs.jpg"
-                alt="photo d'un ordinateur retro"
-                width="100px"
-              />
+        <section class="flex flex-wrap my-10 justify-between gap-5">
+          <article class="flex gap-5 md:w-[45%] lg:w-[31%]">
+            <img
+              class="w-[32%]"
+              src="./assets/images/image-retro-pcs.jpg"
+              alt="photo d'un ordinateur retro"
+            />
 
-              <div class="flex-col text-left">
-                <p class="text-neutral-dark-grayish-blue text-2xl font-bold">
-                  01
-                </p>
-                <h4 class="text-neutral-very-dark-blue font-bold py-1.5">
-                  Reviving Retro PCs
-                </h4>
-                <p class="text-neutral-dark-grayish-blue">
-                  What happens when old PCs are given modern upgrades?
-                </p>
-              </div>
-            </article>
-          </div>
+            <div class="flex flex-col justify-evenly w-[65%]">
+              <p
+                class="text-neutral-dark-grayish-blue text-3xl font-bold"
+              >
+                01
+              </p>
+              <h4
+                class="text-neutral-very-dark-blue font-bold py-1.5 text-xl"
+              >
+                Reviving Retro PCs
+              </h4>
+              <p class="text-neutral-dark-grayish-blue md:text-lg">
+                What happens when old PCs are given modern upgrades?
+              </p>
+            </div>
+          </article>
 
-          <div class="md: flex flex-row gap-5">
-            <article class="flex justify-between mb-8 gap-x-5">
-              <img
-                class="w-24 md:w-40"
-                src="./assets/images/image-top-laptops.jpg"
-                alt="photo d'un ordinateur retro"
-                width="100px"
-              />
-              <div class="flex-col text-left">
-                <p class="text-neutral-dark-grayish-blue text-2xl font-bold">
-                  02
-                </p>
-                <h4 class="text-neutral-very-dark-blue font-bold py-1.5">
-                  Top 10 Laptops of 2022
-                </h4>
-                <p class="text-neutral-dark-grayish-blue">
-                  Our best picks for various needs and budgets
-                </p>
-              </div>
-            </article>
-          </div>
+          <article class="flex gap-5 md:w-[45%] lg:w-[31%]">
+            <img
+              class="w-[32%]"
+              src="./assets/images/image-top-laptops.jpg"
+              alt="photo d'un ordinateur retro"
+            />
+            <div class="flex flex-col justify-evenly w-[65%]">
+              <p
+                class="text-neutral-dark-grayish-blue text-3xl font-bold"
+              >
+                02
+              </p>
+              <h4
+                class="text-neutral-very-dark-blue font-bold py-1.5 text-xl"
+              >
+                Top 10 Laptops of 2022
+              </h4>
+              <p class="text-neutral-dark-grayish-blue md:text-lg">
+                Our best picks for various needs and budgets
+              </p>
+            </div>
+          </article>
 
-          <div class="md: flex flex-row gap-5">
-            <article class="flex justify-between mb-8 gap-x-5">
-              <img
-                class="w-24 md:w-40"
-                src="./assets/images/image-gaming-growth.jpg"
-                alt="photo d'une manette Playstation"
-              />
-              <div class="flex-col text-left">
-                <p class="text-neutral-dark-grayish-blue text-2xl font-bold">
-                  03
-                </p>
-                <h4 class="text-neutral-very-dark-blue font-bold py-1.5">
-                  The Growth of Gaming
-                </h4>
+          <article class="flex gap-5 md:w-[45%] lg:w-[31%]">
+            <img
+              class="w-[32%]"
+              src="./assets/images/image-gaming-growth.jpg"
+              alt="photo d'une manette Playstation"
+            />
+            <div class="flex flex-col justify-evenly w-[65%]">
+              <p
+                class="text-neutral-dark-grayish-blue text-3xl font-bold"
+              >
+                03
+              </p>
+              <h4
+                class="text-neutral-very-dark-blue font-bold py-1.5 text-xl"
+              >
+                The Growth of Gaming
+              </h4>
 
-                <p class="text-neutral-dark-grayish-blue">
-                  How the pandemic has sparked fresh opportunities.
-                </p>
-              </div>
-            </article>
-          </div>
+              <p class="text-neutral-dark-grayish-blue md:text-lg">
+                How the pandemic has sparked fresh opportunities.
+              </p>
+            </div>
+          </article>
         </section>
 
         <div class="attribution">
